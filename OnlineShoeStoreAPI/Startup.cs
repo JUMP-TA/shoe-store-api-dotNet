@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using OnlineShoeStoreAPI.Services; // Add this using directive
+using Microsoft.Extensions.Logging; // Add this using directive
+using OnlineShoeStoreAPI.Services;
 
 namespace OnlineShoeStoreAPI
 {
@@ -10,15 +11,17 @@ namespace OnlineShoeStoreAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<ShoeService>(); // Ensure ShoeService is correctly referenced
+            services.AddScoped<ShoeService>();
         }
 
-        public void Configure(IApplicationBuilder app, IHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostEnvironment env, ILogger<Startup> logger) // Add ILogger parameter
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            logger.LogInformation("Configuring the HTTP request pipeline..."); // Add logging
 
             app.UseRouting();
 
@@ -26,6 +29,8 @@ namespace OnlineShoeStoreAPI
             {
                 endpoints.MapControllers();
             });
+
+            logger.LogInformation("Application started and listening on port 5000"); // Add logging
         }
     }
 }

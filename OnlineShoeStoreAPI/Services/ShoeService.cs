@@ -11,7 +11,8 @@ namespace OnlineShoeStoreAPI.Services
             _shoes = new List<Shoe>
             {
                 new Shoe { Id = 1, Name = "Running Sneakers", Brand = "Nike", Price = 99.99m, Stock = 10 },
-                new Shoe { Id = 2, Name = "Basketball Shoes", Brand = "Adidas", Price = 129.99m, Stock = 5 }
+                new Shoe { Id = 2, Name = "Basketball Shoes", Brand = "Adidas", Price = 129.99m, Stock = 5 },
+                new Shoe { Id = 3, Name = "Work Shoes", Brand = "Carhart", Price = 129.99m, Stock = 5 }
             };
         }
 
