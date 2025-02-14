@@ -15,14 +15,14 @@ jobs:
     - name: 'Checkout GitHub Action'
       uses: actions/checkout@v4
 
-    - name: Setup DotNet ${{ env.DOTNET_VERSION }} Environment
+    - name: Setup DotNet ${{ secrets.DOTNET_VERSION }} Environment
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: ${{ env.DOTNET_VERSION }}
+        dotnet-version: ${{ secrets.DOTNET_VERSION }}
 
     - name: 'Resolve Project Dependencies Using Dotnet'
       run: |
-        pushd './${{ secrets.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
+        pushd './path/to/your/project'
         dotnet build --configuration Release --output ./output
         popd
 
@@ -42,7 +42,7 @@ jobs:
 
     - name: 'Deploy to EC2'
       run: |
-        scp -i ${{ secrets.EC2_SSH_KEY }} -r ./output ${{ secrets.EC2_USER }}@${{ secrets.EC2_INSTANCE_ID }}:/var/www/myapp
-        ssh -i ${{ secrets.EC2_SSH_KEY }} ${{ secrets.EC2_USER }}@${{ secrets.EC2_INSTANCE_ID }} << 'EOF'
+        scp -i ${{ secrets.EC2_SSH_KEY }} -r ./output ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/myapp
+        ssh -i ${{ secrets.EC2_SSH_KEY }} ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
           sudo systemctl restart myapp.service
         EOF
