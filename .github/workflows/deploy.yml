@@ -23,7 +23,7 @@ jobs:
     - name: 'Publish Project Using Dotnet'
       run: |
         pushd './'
-        dotnet publish --configuration Release --output ./output --self-contained
+        dotnet publish --configuration Release --output ./output --self-contained --runtime linux-x64
         popd
 
     - name: Verify output directory
@@ -32,6 +32,11 @@ jobs:
           echo "Output directory does not exist"
           exit 1
         fi
+
+    - name: List output directory contents
+      run: |
+        echo "Listing contents of ./output directory:"
+        ls -la ./output
 
   deploy:
     needs: build
@@ -54,10 +59,12 @@ jobs:
 
     - name: Copy files to EC2
       run: |
+        echo "Copying files to EC2..."
         scp -i private_key -o StrictHostKeyChecking=no -r ./output ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/myapp
 
     - name: Run commands on EC2
       run: |
+        echo "Running commands on EC2..."
         ssh -i private_key -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
           sudo systemctl restart myapp.service
         EOF
