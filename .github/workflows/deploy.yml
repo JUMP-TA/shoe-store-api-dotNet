@@ -5,7 +5,7 @@ on:
     branches: ["main"]
 
 env:
-  DOTNET_VERSION: ${{ secrets.DOTNET_VERSION }}                   # set this to the dotnet version to use (e.g. '2.1.x', '3.1.x', '5.0.x')
+  DOTNET_VERSION: 9.0.x                  # set this to the dotnet version to use (e.g. '2.1.x', '3.1.x', '5.0.x')
 
 jobs:
   build:
