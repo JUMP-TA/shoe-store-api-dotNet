@@ -87,7 +87,7 @@ jobs:
     - name: Copy files to EC2
       run: |
         echo "Copying files to EC2..."
-        scp -i private_key -o StrictHostKeyChecking=no -r ./OnlineShoeStoreAPI/output ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/home/${{ secrets.EC2_USER }}
+        scp -i private_key -o StrictHostKeyChecking=no -r ./OnlineShoeStoreAPI/output ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/home/${{ secrets.EC2_USER }}/output
 
     - name: Run commands on EC2
       run: |
