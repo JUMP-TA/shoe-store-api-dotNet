@@ -15,6 +15,7 @@ namespace OnlineShoeStoreAPI
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseUrls("http://*:5000"); // Add this line to bind to port 5000
                 });
     }
 }

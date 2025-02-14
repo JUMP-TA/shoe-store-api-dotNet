@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fgdYn8cFZpw=",
+  "dgSpecHash": "6SoFv0NLn00=",
   "success": true,
   "projectFilePath": "/Users/matthewtruelove/Java Workspace/PE Persona 3rd Freq/shoe-store-api-dotNet/OnlineShoeStoreAPI/OnlineShoeStoreAPI.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,11 @@
     "/Users/matthewtruelove/.nuget/packages/swashbuckle.aspnetcore/7.2.0/swashbuckle.aspnetcore.7.2.0.nupkg.sha512",
     "/Users/matthewtruelove/.nuget/packages/swashbuckle.aspnetcore.swagger/7.2.0/swashbuckle.aspnetcore.swagger.7.2.0.nupkg.sha512",
     "/Users/matthewtruelove/.nuget/packages/swashbuckle.aspnetcore.swaggergen/7.2.0/swashbuckle.aspnetcore.swaggergen.7.2.0.nupkg.sha512",
-    "/Users/matthewtruelove/.nuget/packages/swashbuckle.aspnetcore.swaggerui/7.2.0/swashbuckle.aspnetcore.swaggerui.7.2.0.nupkg.sha512"
+    "/Users/matthewtruelove/.nuget/packages/swashbuckle.aspnetcore.swaggerui/7.2.0/swashbuckle.aspnetcore.swaggerui.7.2.0.nupkg.sha512",
+    "/Users/matthewtruelove/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/9.0.1/microsoft.netcore.app.runtime.linux-x64.9.0.1.nupkg.sha512",
+    "/Users/matthewtruelove/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/9.0.1/microsoft.aspnetcore.app.runtime.linux-x64.9.0.1.nupkg.sha512",
+    "/Users/matthewtruelove/.nuget/packages/microsoft.netcore.app.crossgen2.osx-arm64/9.0.1/microsoft.netcore.app.crossgen2.osx-arm64.9.0.1.nupkg.sha512",
+    "/Users/matthewtruelove/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.1/microsoft.netcore.app.host.linux-x64.9.0.1.nupkg.sha512"
   ],
   "logs": []
 }
