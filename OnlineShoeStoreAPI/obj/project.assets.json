@@ -671,11 +671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/matthewtruelove/Java Workspace/PE Persona 3rd Freq/OnlineShoeStoreAPI/OnlineShoeStoreAPI/OnlineShoeStoreAPI.csproj",
+      "projectUniqueName": "/Users/matthewtruelove/Java Workspace/PE Persona 3rd Freq/shoe-store-api-dotNet/OnlineShoeStoreAPI/OnlineShoeStoreAPI.csproj",
       "projectName": "OnlineShoeStoreAPI",
-      "projectPath": "/Users/matthewtruelove/Java Workspace/PE Persona 3rd Freq/OnlineShoeStoreAPI/OnlineShoeStoreAPI/OnlineShoeStoreAPI.csproj",
+      "projectPath": "/Users/matthewtruelove/Java Workspace/PE Persona 3rd Freq/shoe-store-api-dotNet/OnlineShoeStoreAPI/OnlineShoeStoreAPI.csproj",
       "packagesPath": "/Users/matthewtruelove/.nuget/packages/",
-      "outputPath": "/Users/matthewtruelove/Java Workspace/PE Persona 3rd Freq/OnlineShoeStoreAPI/OnlineShoeStoreAPI/obj/",
+      "outputPath": "/Users/matthewtruelove/Java Workspace/PE Persona 3rd Freq/shoe-store-api-dotNet/OnlineShoeStoreAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/matthewtruelove/.nuget/NuGet/NuGet.Config"

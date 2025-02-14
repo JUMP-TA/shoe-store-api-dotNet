@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vuAXR89Hl7s=",
+  "dgSpecHash": "fgdYn8cFZpw=",
   "success": true,
-  "projectFilePath": "/Users/matthewtruelove/Java Workspace/PE Persona 3rd Freq/OnlineShoeStoreAPI/OnlineShoeStoreAPI/OnlineShoeStoreAPI.csproj",
+  "projectFilePath": "/Users/matthewtruelove/Java Workspace/PE Persona 3rd Freq/shoe-store-api-dotNet/OnlineShoeStoreAPI/OnlineShoeStoreAPI.csproj",
   "expectedPackageFiles": [
     "/Users/matthewtruelove/.nuget/packages/microsoft.aspnetcore.jsonpatch/9.0.1/microsoft.aspnetcore.jsonpatch.9.0.1.nupkg.sha512",
     "/Users/matthewtruelove/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/9.0.1/microsoft.aspnetcore.mvc.newtonsoftjson.9.0.1.nupkg.sha512",
